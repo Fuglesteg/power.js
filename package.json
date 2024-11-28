@@ -1,0 +1,24 @@
+{
+  "name": "power",
+  "version": "0.0.1",
+  "description": "Bring the convenience of Power Platform connectors into javascript",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 8080 src",
+    "build": "vite build src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fuglesteg/power.js"
+  },
+  "author": "Andreas Fuglesteg Dale <andreasfdale@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "vite": "^6.0.1"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "^3.27.0",
+    "@microsoft/microsoft-graph-client": "^3.0.7"
+  }
+}
