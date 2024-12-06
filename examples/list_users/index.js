@@ -16,13 +16,11 @@ const power = await makePowerClient({
 const users = (await power.api("/users").select("displayName", "id").get()).value;
 
 const makeUserTable = users => {
-    console.log(users);
     const table = document.createElement("table");
     const headerRow = document.createElement("tr")
     headerRow.replaceChildren(...Object.keys(users[0]).map(key => {
         const header = document.createElement("th");
         header.innerText = key;
-        header.scope = "col";
         return header;
     }));
     table.replaceChildren(...users.map(user => {
